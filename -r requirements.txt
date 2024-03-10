@@ -1,0 +1,8 @@
+Dependencies: 
+Flask
+PyPDF2
+Sumy
+NLTK
+langdetect
+googletrans
+#pip install -r requirements.txt

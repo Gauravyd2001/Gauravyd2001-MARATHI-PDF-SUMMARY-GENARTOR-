@@ -1,0 +1,53 @@
+Marathi PDF Summary Generator
+This Flask application is designed to extract text from Marathi PDF files, generate summaries, and extract keywords. It uses various natural language processing techniques and libraries such as PyPDF2, Sumy, NLTK, langdetect, and Googletrans.
+
+
+Installation :
+
+To run this application locally, follow these steps:
+
+Clone this repository to your local machine:
+
+git clone https://github.com/Gauravyd2001/Gauravyd2001-MARATHI-PDF-SUMMARY-GENARTOR-.git
+Navigate to the project directory:
+
+cd Gauravyd2001-MARATHI-PDF-SUMMARY-GENARTOR-
+Install the required dependencies. It's recommended to use a virtual environment:
+
+DEPENDENCIES:
+
+pip install -r requirements.txt
+
+Start the Flask application:
+
+python app.py
+Open your web browser and go to http://localhost:5000/.
+
+Upload a Marathi PDF file using the provided form.
+The application will extract the text from the PDF, generate a summary, and display the result.
+
+The project structure is as follows:
+.
+├── app.py                  # Main Flask application
+├── uploads/                # Directory to store uploaded PDF files
+├── templates/              # HTML templates for the Flask application
+│   ├── index.html          # Home page template
+│   └── result.html         # Result page template
+├── static/                 # Static files (CSS, JS)
+│   └── style.css           # CSS file for styling
+├── README.md               # Project README file
+└── requirements.txt        # List of Python dependencies
+
+Dependencies:
+Flask
+PyPDF2
+Sumy
+NLTK
+langdetect
+googletrans
+
+
+You can install these dependencies using pip:
+
+
+pip install -r requirements.txt
