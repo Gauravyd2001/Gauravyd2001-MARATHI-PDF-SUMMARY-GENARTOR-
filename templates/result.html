@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summary</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Summary</h1>
+        <p>{{ summary }}</p>
+        <h2>Keywords</h2>
+        <ul>
+            {% for keyword in keywords %}
+                <li>{{ keyword }}</li>
+            {% endfor %}
+        </ul>
+        <form method="POST" action="/">
+            <label for="translate_to">Translate Summary and Keywords to:</label>
+            <select name="translate_to" id="translate_to">
+                <option value="en">English</option>
+                <!-- Add other language options here -->
+            </select>
+            <br><br>
+            <input type="submit" value="Translate">
+        </form>
+    </div>
+</body>
+</html>
+
+
